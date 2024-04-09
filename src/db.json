@@ -1,0 +1,176 @@
+{
+  "seller": [
+    {
+      "id": "351c",
+      "name": "Harshit Srivastava",
+      "email": "harshit@seller.com",
+      "password": "1234"
+    },
+    {
+      "id": "982b",
+      "name": "Bob Marley",
+      "password": "ytu",
+      "email": "ruy"
+    },
+    {
+      "id": "f724",
+      "name": "rakesh",
+      "password": "1234",
+      "email": "rakesh@gmail.com"
+    },
+    {
+      "id": "9d07",
+      "name": "hs",
+      "email": "hs@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "0580",
+      "name": "h",
+      "email": "hs@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "products": [
+    {
+      "name": "Apple",
+      "price": "100000",
+      "color": "Orange",
+      "category": "Watch",
+      "description": "An Apple Watch",
+      "image": "https://inventstore.in/wp-content/uploads/2023/09/watch-ultra-double-1.webp",
+      "id": "2"
+    },
+    {
+      "name": "VIVO",
+      "price": "100000",
+      "color": "black",
+      "category": "mobiles",
+      "description": "an vivo product",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/a/m/m/v29-5g-v2250-vivo-original-imagtyqfdbgyfmj4.jpeg?q=20&crop=false",
+      "id": "3"
+    },
+    {
+      "name": "Football",
+      "price": "1000",
+      "color": "Green",
+      "category": "Games",
+      "description": "Cosco Football",
+      "image": "https://www.cosco.in/uploads/products/main_image/delta-force-2022_16835356146.png",
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "name": "Puma",
+      "price": "25000",
+      "color": "black",
+      "category": "Shoes",
+      "description": "Puma Shoes",
+      "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/379535/06/sv04/fnd/IND/fmt/png/FlexFocus-Lite-Unisex-Running-Shoes"
+    },
+    {
+      "id": "6",
+      "name": "Nikon",
+      "price": "500000",
+      "color": "black",
+      "category": "Camera",
+      "description": "Nikon Camera",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/camera/s/4/g/nikon-d3200-dslr-original-imaeyxfaahpzdktm.jpeg?q=90&crop=false"
+    },
+    {
+      "id": "7",
+      "name": "Buddha",
+      "price": "5000",
+      "color": "",
+      "category": "Statue",
+      "description": "Buddha Statue",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/9/CY/JX/QD/7385673/blue-fiber-buddha-statue.jpeg"
+    },
+    {
+      "id": "8",
+      "name": "Hero Sprint",
+      "price": "5000",
+      "color": "",
+      "category": "Cycles",
+      "description": "Hero Sprint",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/cycle/g/b/y/hero-cycles-for-men-s-and-boys-27-5-17-calcuttacycleco-90-single-original-imagghpp9shxzb66.jpeg?q=90&crop=false"
+    },
+    {
+      "name": "iphone 14",
+      "price": "1000000",
+      "color": "Black",
+      "category": "mobiles",
+      "description": "A fabulous phone",
+      "image": "https://iplanet.one/cdn/shop/files/iPhone_14_Pro_Max_Deep_Purple_PDP_Image_Position-1a__WWEN_823x.jpg?v=1691141505",
+      "id": "1"
+    }
+  ],
+  "user": [
+    {
+      "id": "f404",
+      "name": "Harshit",
+      "email": "harshit15092000@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "9453",
+      "name": "VK",
+      "email": "vijay@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "eb2e",
+      "name": "Shaurya",
+      "email": "s@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "cart": [
+    {
+      "id": "b52f",
+      "name": "Apple",
+      "price": "100000",
+      "color": "Orange",
+      "category": "Watch",
+      "description": "An Apple Watch",
+      "image": "https://inventstore.in/wp-content/uploads/2023/09/watch-ultra-double-1.webp",
+      "quantity": 2,
+      "productId": "2",
+      "userId": null
+    },
+    {
+      "id": "f4b3",
+      "name": "Apple",
+      "price": "100000",
+      "color": "Orange",
+      "category": "Watch",
+      "description": "An Apple Watch",
+      "image": "https://inventstore.in/wp-content/uploads/2023/09/watch-ultra-double-1.webp",
+      "quantity": 2,
+      "productId": "2",
+      "userId": null
+    },
+    {
+      "id": "7805",
+      "name": "Apple",
+      "price": "100000",
+      "color": "Orange",
+      "category": "Watch",
+      "description": "An Apple Watch",
+      "image": "https://inventstore.in/wp-content/uploads/2023/09/watch-ultra-double-1.webp",
+      "quantity": 2,
+      "productId": "2",
+      "userId": null
+    }
+  ],
+  "orders": [
+    {
+      "id": "4079",
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 100100,
+      "userId": "f404"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+.checkout h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* margin-left: 295px; */
+}
+.checkout h3{
+text-align: center;
+margin-top: 15px;
+margin-bottom: 15px;
+
+}
+.form-button {
+    background-color:#4CAF50; /* Set your desired button background color */
+    color: white; 
+
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  /* .shipping-address{
+    margin-left: 438px;
+  } */

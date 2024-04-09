@@ -1,0 +1,60 @@
+/* table {
+    text-align: left;
+    color: black;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    border: 1px solid black;
+    padding: 95px;
+    min-height: 160px;
+}
+img{
+    width:100px;
+    height: 100px;
+}
+.adjust-update-link{
+    margin-left: 10px;
+} */
+.product-list {
+    max-width: 1200px; /* Set maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding */
+}
+
+.product-list h1 {
+    font-size: 24px; /* Set font size */
+    margin-bottom: 20px; /* Add spacing */
+}
+
+.product-list table {
+    width: 100%; /* Set table width */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+.product-list th,
+.product-list td {
+    border: 1px solid #ddd; /* Add border */
+    padding: 10px; /* Add padding */
+    text-align: left; /* Align text to left */
+}
+
+.product-list th {
+    background-color: #f0f0f0; /* Set background color for header */
+}
+
+.product-list img {
+    max-width: 100px; /* Set maximum image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product-list .adjust-update-link {
+    color: #007bff; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    margin-right: 5px; /* Add spacing */
+}
+
+.product-list .adjust-update-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}

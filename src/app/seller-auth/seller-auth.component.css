@@ -1,0 +1,72 @@
+
+.seller-auth {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-left: 19rem;
+    height: 100%; /* Adjust height as needed */
+}
+
+.sign-up, .login {
+    width: 394px; /* Adjust width as needed */
+    padding: 19px;
+    border: 1px solid #ccc; /* Set your desired border color */
+    border-radius: 5px; /* Set your desired border radius */
+    background-color: #f9f9f9; /* Set your desired background color */
+    padding-left: 20px; /* Add padding to the left */
+}
+
+h1 {
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+    margin-top: 0; /* Remove default margin from the top */
+}
+
+.common-form {
+    margin-top: 123px; /* Adjust spacing between form and title */
+}
+
+.form-input {
+    width: calc(100% - 20px); /* Make inputs fill the container */
+    margin-bottom: 10px; /* Adjust spacing between inputs */
+    padding: 8px;
+    border: 1px solid #ccc; /* Set your desired border color */
+    border-radius: 5px; /* Set your desired border radius */
+}
+
+.form-button {
+    width: calc(100% - 20px); /* Make button fill the container */
+    padding: 10px;
+    background-color:#4CAF50; /* Set your desired button background color */
+    color: white; /* Set your desired button text color */
+    border: none;
+    border-radius: 5px; /* Set your desired border radius */
+    cursor: pointer;
+}
+
+.auth-toggle-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px; /* Adjust spacing between link and button */
+    color: #007bff; /* Set your desired link color */
+    text-decoration: none;
+}
+
+.auth-toggle-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.error-p {
+    color: red; /* Set your desired error message color */
+    margin-bottom: 10px; /* Adjust spacing below error message */
+}
+.form-button:hover {
+    background-color: green; /* Darker shade on hover */
+  }
+
+ .seller-auth{
+    width: 446px; /* Adjust width as needed */
+    margin: 152px auto; /* This centers the element horizontally */
+}

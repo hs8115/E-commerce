@@ -1,0 +1,46 @@
+.product-image{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+.product-color{
+    border:3px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}.product-details{
+    margin-top: 50px;
+    margin-bottom :80px;
+}
+h1,h5,h6{
+    margin-bottom: 20px;
+}
+/* .quantity-group{
+    
+    margin-top: 20px;
+}
+.quantity-group button{
+    padding: 20px;
+}
+.quantity-group input{
+ width: 20px;
+ padding: 10px;
+} */
+.quantity-group {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+}
+
+.quantity-group button {
+    background-color: #ccc; /* Button background color */
+    border: none; /* Remove border */
+    padding: 5px 10px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.quantity-group input {
+    width: 75px; /* Set width of input field */
+    margin: 30px 11px !important;
+    /* Add margin around input field */
+    text-align: center; /* Center text horizontally */
+}

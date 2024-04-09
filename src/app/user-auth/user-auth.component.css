@@ -1,0 +1,48 @@
+.user-auth  {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    margin: 97px ;
+    padding: 44px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 587px;
+
+}
+
+.user-auth h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.common-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-input:focus {
+    outline: none;
+
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  
+}
+.user-auth a{
+    color:blue;
+    cursor: pointer;
+}

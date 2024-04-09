@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+You can add global styles to this file,
+and also import other style files body {
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.common-form {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 300px;
+    /* height: 35px; */
+}
+
+.form-input {
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid #333;
+    color: #333;
+}
+
+.form-button {
+    height: 35px;
+    border: 1px solid #333;
+    cursor: pointer;
+
+}
+
+.error-p {
+
+    color: red;
+}
+
+.message-p {
+    color: green;
+    text-align: center;
+}
+
+.carousel-caption {
+    background-color: #000000bd;
+    border-radius: 20px;
+
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: black;
+    border: 5px;
+}
+/* Set background color for the body element */
+body {
+    background-color: #b6b6b6; /* Use your desired color */
+}
+.error-message{
+    span{
+        color: red ;
+        text-align: justify !important;
+    } 
+}
+
+
+
+/* .carousel-control-next-icon{
+    background-color: black;
+}
+.carousel-control-prev-icon{
+    background-color: black;
+}
+.form-input:hover{
+    transition: 0.5s;
+    transform: scale(1.05,1.05);
+}
+  */

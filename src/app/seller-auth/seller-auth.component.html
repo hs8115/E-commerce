@@ -1,0 +1,121 @@
+<!-- <div class="seller-auth">
+    <div *ngIf="!showLogin" class="sign-up">
+        <h1>Seller Sign-up</h1>
+        <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
+            <input class="form-input" type="text" ngModel name="name" placeholder="Enter Name" required><br>
+            <input class="form-input" type="password" ngModel name="password" placeholder="Enter Password" required><br>
+            <input class="form-input" type="text" ngModel name="email" placeholder="Enter Email" required><br>
+            <button type="submit" class="form-button"  [disabled]="sellerSignUp.invalid">Sign Up</button>
+            <a class="auth-toggle-link" (click)="openLogin()">Already have an Account? Click to Login</a>
+        </form>
+    </div>
+
+
+    <div *ngIf="showLogin" class="login">
+        <h1>Seller Login</h1>
+        <p class="error-p">{{ authError }}</p>
+        <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="common-form">
+            <input class="form-input" type="text" ngModel name="email" placeholder="Enter Email" required><br>
+            <input class="form-input" type="password" ngModel name="password" placeholder="Enter Password" required><br>
+            <button type="submit" class="form-button" [disabled]="sellerLogin.invalid">Login</button>
+            <a class="auth-toggle-link" (click)="openSignUp()">Don't have an Account? Click to Sign Up</a>
+        </form>
+    </div>
+</div> -->
+<div class="seller-auth">
+    <div *ngIf="!showLogin" class="sign-up">
+        <h1>Seller SignUp</h1>
+        <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
+            <input class="form-input" type="text" ngModel name="name" placeholder="Enter your Name" #name="ngModel"
+                required pattern="^(?!\s)[a-zA-Z\s]*$">
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error-message">
+                <div *ngIf="name.errors&& name.errors['required']">
+                    <span> Name is required.</span>
+                </div>
+                <div *ngIf="name.errors && name.errors['pattern']">
+                    <span> Name must contain only letters and spaces, with a minimum length of 3 and a maximum
+                        of 20
+                        characters. </span>
+                </div>
+            </div>
+ 
+            <!-- <p class="invalid-input"><span *ngIf="Name.invalid && Name.touched">Please Enter Valid Value</span></p> -->
+            <input class="form-input" type="email" ngModel name="email" placeholder="Enter your Email" #email="ngModel"
+                required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message">
+                <div *ngIf="email.errors&& email.errors['required']">
+                    <span> Email is required.</span>
+                </div>
+                <div *ngIf="email.errors && email.errors['pattern']">
+                    <span> Please Enter Proper Email Address using @email.coom at the postfix</span>
+                </div>
+            </div>
+            <!-- <p class="invalid-input"><span *ngIf="email.invalid && email.touched">Please Enter Valid Value</span>
+            </p> -->
+            <input class="form-input" type="password" ngModel name="password" placeholder="Enter your Password"
+                #password="ngModel" required >
+                <!-- pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()\-_=+{};:,<.>]).{8,}$
+                " -->
+            <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error-message">
+                <div *ngIf="password.errors&& password.errors['required']">
+                    <span> password is required.</span>
+                </div>
+                <!-- <div *ngIf="password.errors && password.errors['pattern']">
+                    <span> Please Enter Proper Password With 1 character ,8 minimum character, one number & 1 special
+                        symbol . </span>
+                </div> -->
+            </div>
+            <!-- <p class="invalid-input"><span *ngIf="password.invalid && password.touched">Please Enter Valid
+                    Value</span></p> -->
+            <button [disabled]="sellerSignUp.invalid" class="form-button">Sign Up</button>
+            <a class="auth-toggle-link" (click)="openLogin()">Already Have Account? Click to Login</a>
+        </form>
+    </div>
+
+
+ 
+    <!--Login Area-->
+
+    <div *ngIf="showLogin" class="login">
+        <h1>Seller Login</h1>
+        <p class="error-p">{{authError}}</p>
+        <form #sellerlogin="ngForm" (ngSubmit)="login(sellerlogin.value)" class="common-form">
+ 
+            <input class="form-input" type="email" ngModel name="email" placeholder="Enter your Email" #email="ngModel"
+                required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message">
+                <div *ngIf="email.errors&& email.errors['required']">
+                    <span> Email is required.</span>
+                </div>
+                <div *ngIf="email.errors && email.errors['pattern']">
+                    <span> Please Enter Proper Email Address using @email.coom at the postfix</span>
+                </div>
+            </div>
+            <!-- <p class="invalid-input"><span *ngIf="email.invalid && email.touched">Please Enter Valid Value</span>
+            </p> -->
+            <input class="form-input" type="password" ngModel name="password" placeholder="Enter your Password"
+                #password="ngModel" required >
+            <!-- pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()\-_=+{};:,<.>]).{8,}$
+                " -->
+            <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error-message">
+                <div *ngIf="password.errors&& password.errors['required']">
+                    <span> password is required.</span>
+                </div>
+                <!-- <div *ngIf="password.errors && password.errors['pattern']">
+                    <span> Please Enter Proper Password With 1 character ,8 minimum character, one number & 1 special
+                        symbol . </span>
+                </div> -->
+            </div>
+            <!-- <p class="invalid-input"><span *ngIf="password.invalid && password.touched">Please Enter Valid
+                    Value</span></p> -->
+            <button  class="form-button">Login</button>
+            <a class="auth-toggle-link" (click)=" openSignUp()">Do not Have Account? Click to Signup</a>
+        </form>
+    </div>
+    <!-- <a routerLink='page-not-found'>error</a>
+    <a (click)="errorlink()">error</a>
+    <button (click)="errorlink()">error</button> -->
+ 
+</div>
+
+
